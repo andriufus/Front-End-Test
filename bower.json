@@ -1,0 +1,25 @@
+{
+  "name": "Front End Developer Test",
+  "version": "1.0.0",
+  "homepage": "https://github.com/andriufus/Front-End-Test",
+  "authors": [
+    "AccioCode"
+  ],
+  "description": "Trying to get Front End developers job",
+  "main": "index.html",
+  "keywords": [
+    "Trying to get Front End developers job"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest"
+  }
+}

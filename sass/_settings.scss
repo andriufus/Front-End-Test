@@ -1,0 +1,45 @@
+/*
+*	Layout dimensions
+*/
+$grid_width: 1050px;
+
+
+/*
+*	Layout colors
+*/
+
+$pink:			#D4145A;
+$light_grey:	#E6E6E6;
+$dark_grey:		#CCCCCC;
+$white:			#FFFFFF;
+$black:			#000000;
+
+$light_text:	#4d4d4d;
+$dark_text:		$black;
+$blue:			#0071bc;
+$footer_text:	#b3b3b3;
+
+/*
+*	Font sizes
+*/
+
+$h1_f_s:				3.5em;
+$header_top_nav_f_s:	0.875em;
+$header_main_nav_f_s:	1.25em;
+$submenu_f_s:			0.75em;
+$h2_f_s:				2.344em;
+$main_text_f-S:			$header_top_nav_f_s;
+$h3_f_s:				1.5em;
+
+/*
+*	Mixins for font families
+*/
+
+@mixin f-f-Trebuched(){
+	font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
+}
+
+@mixin f-f-time-new-roman(){
+	font-family: "Times New Roman", Georgia, Serif;
+}
+

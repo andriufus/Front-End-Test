@@ -427,6 +427,17 @@ th {
 /*
 *	Stylesheet for "The site" page layout
 */
+/**
+*	FILE CONTENTS
+*	
+*	1. Imports
+*	2. Basic styles for the website
+*	3. Header styles
+*	4. Content styles
+*	5. Style layout for bottom_content
+*	6. Footer style
+*	7. Media queries
+*/
 /*
 *	Layout dimensions
 */
@@ -464,9 +475,6 @@ th {
 /*
 *	Basic styles for the website
 */
-html, body {
-  font-size: 16px; }
-
 body {
   font-family: "Times New Roman", Georgia, Serif;
   background: #E6E6E6; }
@@ -747,7 +755,7 @@ h3 {
 #only_for_small {
   display: none; }
 
-/*
+/**
 *	Media queries
 */
 @media only screen and (max-width: 767px) {

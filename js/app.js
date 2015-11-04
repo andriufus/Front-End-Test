@@ -16,20 +16,23 @@ $(function() {
     if($('#only_for_small').css('display') == 'block') mob = true;
     
     // if using mobile make menu item with submenu clickable
+    if(mob){
+        $('.has_sub_menu').click(function(event) {
+        	/* Act on the event */
+            
+            // When menu item clicked show/hide submenu 
+        	if($(this).find('.submenu').hasClass('visible')){
+        		$(this).find('.submenu').removeClass('visible');
+        	}else{
+        		$(this).find('.submenu').addClass('visible');
+        	}
+            return false;
+        	
+        });
+    }
 
-    $('.has_sub_menu').click(function(event) {
-    	/* Act on the event */
-    	if($(this).find('.submenu').hasClass('visible')){
-    		$(this).find('.submenu').removeClass('visible');
-    	}else{
-    		$(this).find('.submenu').addClass('visible');
-    	}
-        return false;
-    	
-    });
 
-
-    /*
+    /**
     *	Form validation
     */
 
@@ -46,6 +49,7 @@ $(function() {
     	// reset fields with errors
     	$('.error').removeClass('error');
     	var error_count = 0;
+
     	// check if name is entered
     	if(name == '' || name == null){
     		error_count++;
@@ -64,9 +68,17 @@ $(function() {
     		throw_error(messageField,'Please enter your message.');
     	}
 
+        // do not send form if error was found
     	if(error_count>0) return false;
     });
 
+    /**
+    *   Function to put error message next to invalid form field
+    *   
+    *   @param el (invalid input field)
+    *   @param msg (error message to display)
+    *   
+    */
     function throw_error(el,msg){
     	$(el).addClass('error');
     	$(el).parent().find('.error_box').html(msg).addClass('error');

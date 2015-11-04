@@ -2,16 +2,30 @@
 *	Stylesheet for "The site" page layout
 */ 
 
+
+
+/**
+*	FILE CONTENTS
+*	
+*	1. Imports
+*	2. Basic styles for the website
+*	3. Header styles
+*	4. Content styles
+*	5. Style layout for bottom_content
+*	6. Footer style
+*	7. Media queries
+*/
+
+// Importing default setting for the website styles
 @import "settings";
 
+// Importing grid classes for responsive layout
 @import "grid";
 
 /*
 *	Basic styles for the website
 */
-html,body{
-	font-size: 16px;
-}
+
 body{
 	@include f-f-time-new-roman();
 	background: $light_grey;
@@ -157,11 +171,11 @@ nav ul, nav li{
 *	Content styles
 */
 p{
-			@include f-f-Trebuched();
-			font-size: $main_text_f-S;
-			color: $light_text;
-			line-height: 140%;
-		}
+	@include f-f-Trebuched();
+	font-size: $main_text_f-S;
+	color: $light_text;
+	line-height: 140%;
+}
 #main_container{
 	padding-top: 36px;
 }//#main_container
@@ -179,7 +193,7 @@ p{
 			color: $light_text;
 			line-height: 140%;
 		}
-	}
+	}//#main_content
 
 	#content_bottom_row{
 		margin-top: 20px;
@@ -294,6 +308,7 @@ p{
 			opacity: 0;
 			transition: all .5s;
 			color: $white;
+
 			&.error{
 				transition: all .5s;
 				display: block;
@@ -408,7 +423,7 @@ h3{
     	display: none;
     }
 
-/*
+/**
 *	Media queries
 */
 
